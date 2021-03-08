@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+    ////////////////////////////////// TEST ////////////////////////////////////
+
+    // var arr = ["Pirandello", "Saba", "Ungaretti", "D'Annunzio", "Montale", "Camilleri"];
+    // var userName = prompt('Inserisci il tuo cognome');
+    // var newArr = [];
+    //
+    // arr.push(userName);
+    //
+    // for (var i = 0; i < arr.length; i++) {
+    //
+    //   newArr.push(arr[i]);
+    //   console.log(i, newArr[i]);
+    // }
+    //
+    // newArr.sort()
+    // console.log(newArr);
+
+
+    //////////////////////////// ESERCIZIO CORRETTO ////////////////////////////
+
+    var userName = prompt('Inserisci il tuo cognome');
+     var arr = ["pirandello", "saba", "ungaretti", "montale", "camilleri", "d'annunzio"]
+
+     arr.push(userName);
+     console.log('Array non ordinato: ' + arr);
+     arr.sort();
+
+
+     for (var i = 0; i < arr.length; i++) {
+
+       if (arr[i] == userName) {
+         console.log(i, arr[i], "Questo è il cognome dell'utente");
+
+       } else {
+         console.log(i, arr[i]);
+
+       }
+
+     }
+
+    </script>
+
+  </body>
+</html>
